@@ -1,0 +1,6 @@
+.section {
+  min-height: 100vh;
+  padding: var(--section-padding);
+  display: flex;
+  align-items: center;
+}

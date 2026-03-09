@@ -1,0 +1,29 @@
+.section_projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: clamp(1.5rem, 8vw, 10rem);
+  background-color: var(--bg_primary);
+}
+
+.projects_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects_desc {
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--text_primary);
+  margin-bottom: 1rem;
+}
+.projects_text {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 500;
+  font-family: var(--font-primary);
+  margin-bottom: 2rem;
+}

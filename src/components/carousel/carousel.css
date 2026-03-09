@@ -1,0 +1,114 @@
+.carousel_section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:80px 0;
+}
+
+/* SWIPER */
+
+.swiper{
+  width:100%;
+  max-width:1200px;
+}
+
+/* CARD */
+
+.project_card{
+  width:320px;
+  height:420px;
+
+  border-radius:16px;
+  overflow:hidden;
+
+  background:var(--bg_secondary);
+  backdrop-filter: blur(5px);
+
+  display:flex;
+  flex-direction:column;
+
+  transform:scale(.9);
+  transition:transform .4s ease;
+}
+
+.swiper-slide-active{
+  transform:scale(1.05);
+  backdrop-filter: blur(0px);
+}
+
+/* IMAGE */
+
+.project_card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  filter: grayscale(90%);
+  transition: filter .4s ease, transform .4s ease;
+}
+
+.swiper-slide-active img{
+  filter: grayscale(0%);
+}
+/* CONTENT */
+
+.card_content{
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.card_content h3{
+  font-size:1.2rem;
+}
+
+.card_content p{
+  font-size:.9rem;
+  opacity:.8;
+}
+
+/* BUTTONS */
+
+.card_buttons{
+  display:flex;
+  gap:10px;
+  margin-top:auto;
+}
+
+.card_buttons button{
+  flex:1;
+  padding:8px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  background: #B87333;
+  color:black;
+  transition:opacity .3s;
+}
+
+.card_buttons button:hover{
+  opacity:.8;
+}
+
+/* PAGINATION */
+
+.swiper-pagination{
+  margin-top:20px;
+}
+
+.swiper-pagination-bullet{
+  width:12px;
+  height: 12px;
+  border-radius: 50%;
+  background:var(--accent);
+  opacity:0.5;
+}
+
+ .swiper-pagination-bullet-active{
+  background:var(--accent);
+  width: 32px;
+  border-radius: 8px;
+  transition: all 0.8s ease-in-out;
+  opacity: 1;
+}
