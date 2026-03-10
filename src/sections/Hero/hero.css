@@ -25,9 +25,32 @@
   font-family: var(--font-accent);
 }
 
+.hero_Title span {
+  color: var(--accent_text);
+}
 
 .hero_Subtitle {
   font-size: clamp(2.4rem, 2vw, 1.4rem);
   font-weight: 600;
   font-family: var(--font-primary);
 }
+
+.hero_Subtitle span {
+  color: var(--accent_text);
+  -webkit-text-stroke: 1px var(--accent_text);
+  transition: 0.3s;
+
+  }
+
+  @media(hover: hover) {
+  .hero_Subtitle span {
+    color: transparent;
+    
+  }
+
+  .hero_Subtitle span:hover {
+    color: var(--accent_text);
+    -webkit-text-stroke: 1px var(--accent_text);
+  }
+
+  }
