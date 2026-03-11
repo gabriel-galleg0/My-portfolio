@@ -1,0 +1,95 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem clamp(1.5rem, 8vw, 10rem);
+  z-index: 999;
+
+  transform: translateY(-100%);
+  transition: 0.3s ease;
+}
+
+.navbar_visible{
+  transform: translateY(0);
+  backdrop-filter: blur(10px);
+}
+
+.navbar_container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.nav_links{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav_links a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+
+@media (max-width: 900px){
+
+  .nav_links{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #111;
+
+    transition: 0.3s;
+  }
+
+  .nav_links.active{
+    right: 0;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+}
+
+.menu_close{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+
+  color: white;
+}

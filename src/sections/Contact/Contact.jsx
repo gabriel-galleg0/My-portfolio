@@ -26,7 +26,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="section_contact">
+    <section id="contact" className="section_contact">
       <div className="contact_content">
 
         <h2 className="contact_title">Get In Touch</h2>
