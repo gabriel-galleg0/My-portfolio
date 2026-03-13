@@ -10,7 +10,7 @@ export default function Navbar(){
 
         const timer = setTimeout(() => {
       setShowNav(true)
-    }, 2500) // 2.5 segundos
+    }, 2500) 
 
     return () => clearTimeout(timer)
 

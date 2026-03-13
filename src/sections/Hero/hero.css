@@ -36,21 +36,55 @@
 }
 
 .hero_Subtitle span {
-  color: var(--accent_text);
+  color: transparent;
   -webkit-text-stroke: 1px var(--accent_text);
-  transition: 0.3s;
-
+  
+  animation: flicker 2.5s ease forwards;
   }
 
-  @media(hover: hover) {
-  .hero_Subtitle span {
+@keyframes flicker {
+  0%{
     color: transparent;
-    
   }
-
-  .hero_Subtitle span:hover {
+  12%{
     color: var(--accent_text);
-    -webkit-text-stroke: 1px var(--accent_text);
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
   }
-
+  22%{
+    color: transparent;
   }
+  35%{
+    color: var(--accent_text);
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  }
+  45%{
+    color: transparent;
+  }
+  55% {
+    color: var(--accent_text);
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  }
+  63%{
+    color: transparent;
+  }
+  70%{
+     color: var(--accent_text); 
+  }
+  76%{
+    color: transparent;
+  }
+  82%{
+    color: var(--accent_text);
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+  87%{
+    color: var(--accent_text);
+  }
+  92%{
+    color: transparent;
+  }
+  100%{
+    color: var(--accent_text);
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+  }
+}
