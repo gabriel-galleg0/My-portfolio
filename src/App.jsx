@@ -3,8 +3,10 @@ import Intro from "./sections/Intro/Intro"
 import Contact from "./sections/Contact/Contact"
 import Navbar from "./components/layout/Navbar/Navbar"
 import "./styles/variables.css"
-import Footer from "./sections/Footer/footer"
+
 import {lazy, Suspense} from "react"
+import BackgroundShape from "./components/background/BackgroundShape"
+import Footer from "./sections/Footer/Footer"
 
 const Projects = lazy(() => import("./sections/Projects/Projects"))
 const Timeline = lazy(() => import("./components/timeline/Timeline"))
@@ -12,6 +14,8 @@ const Timeline = lazy(() => import("./components/timeline/Timeline"))
 export default function App() {
   return (
     <>
+    <BackgroundShape />
+
     <Navbar />
      <Hero />
      <Intro/>
@@ -23,7 +27,7 @@ export default function App() {
     <Suspense fallback={null}>
      <Projects />
       </Suspense>
-    <Projects />
+  
     <Contact />
     <Footer />
     </>

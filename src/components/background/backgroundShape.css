@@ -1,0 +1,22 @@
+.background_shape{
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+
+  z-index: 0; /* abaixo do conteúdo */
+}
+
+.background_shape svg{
+  width: 900px;
+  height: 900px;
+
+  opacity: 0.9;
+  filter: blur(20px);
+
+  will-change: transform;
+}

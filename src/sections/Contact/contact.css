@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   padding-inline: clamp(1.5rem, 8vw, 10rem);
-  background-color: var(--bg_primary);
 }
 
 .contact_content{
@@ -14,6 +13,7 @@
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+  z-index: 3;
 }
 
 .contact_title{

@@ -7,13 +7,12 @@
 }
 
 .section{
-  background: var(--bg_primary);
   min-height: 100vh;
   padding: 6rem 8%;
   position: relative;
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 html {
@@ -22,10 +21,10 @@ html {
 
 body {
   font-family: 'Urbanist', sans-serif;
-  color: var(--bg_primary);
-  color: var(--text_primary);
   line-height: 1.6;
   overflow-x: hidden;
+  background-color: var(--bg_primary);
+  color: var(--text_primary);
 }
 
 a {
