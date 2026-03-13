@@ -8,7 +8,7 @@
 
   pointer-events: none;
 
-  z-index: 0; /* abaixo do conteúdo */
+  z-index: 0; 
 }
 
 .background_shape svg{

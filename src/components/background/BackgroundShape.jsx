@@ -16,7 +16,6 @@ export default function BackgroundShape() {
 
       const blob = blobRef.current
 
-      // entrada inicial
       gsap.fromTo(
         blob,
         {
@@ -34,7 +33,6 @@ export default function BackgroundShape() {
         }
       )
 
-      // rotação contínua
       gsap.to(blob, {
         rotation: 360,
         duration: 40,
@@ -43,7 +41,6 @@ export default function BackgroundShape() {
         transformOrigin: "50% 50%"
       })
 
-      // pulsação
       gsap.to(blob, {
         scale: 1.05,
         duration: 3,
@@ -52,7 +49,7 @@ export default function BackgroundShape() {
         ease: "sine.inOut"
       })
 
-      // movimento geral com scroll
+     
 gsap.utils.toArray(".section").forEach((section,i)=>{
 
   gsap.to(blob,{
@@ -83,7 +80,6 @@ gsap.utils.toArray(".section").forEach((section,i)=>{
 
 })
 
-      // deformação orgânica
       gsap.to(blob, {
         attr: {
           d: "M300,100C420,80,520,200,480,340C420,520,180,520,120,360C80,200,200,80,300,100Z"

@@ -18,7 +18,7 @@
   position: relative;
 }
 
-/* Linha central */
+
 .timeline_wrapper::before {
   content: "";
   position: absolute;
@@ -32,7 +32,7 @@
   z-index: 1;
 }
 
-/* Item */
+
 .timeline_item {
   width: 50%;
   position: relative;
@@ -41,7 +41,6 @@
   gap: 0.8rem;
 }
 
-/* Alternância */
 .timeline_item:nth-child(odd) {
   align-self: flex-start;
   text-align: right;
@@ -61,7 +60,6 @@
   left: -8px;
 }
 
-/* Bolinha */
 .timeline_dot {
   position: absolute;
   top: 1.5rem;
@@ -74,7 +72,6 @@
 }
 
 
-/* Conteúdo */
 .timeline_content {
   background-color: #B87333;
   padding: 1.8rem;
@@ -82,13 +79,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover moderno */
+
 .timeline_content:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Ano */
+
 .timeline_year {
   font-size: clamp(1rem, 1.2vw, 1.1rem);
   font-weight: 600;
@@ -96,7 +93,6 @@
   font-family: var(--font-primary);
 }
 
-/* Título */
 .timeline_content h3 {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 700;
@@ -105,7 +101,7 @@
   line-height: 1.2;
 }
 
-/* Descrição */
+
 .timeline_content p {
   font-size: clamp(1rem, 1.1vw, 1.1rem);
   font-family: var(--font-primary);
@@ -113,7 +109,7 @@
   opacity: 0.8;
 }
 
-/* ===== RESPONSIVO ===== */
+
 
 @media (max-width: 768px) {
   .timeline_wrapper::before {
